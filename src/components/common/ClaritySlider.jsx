@@ -61,7 +61,7 @@ export default function ClaritySlider() {
     >
       <div className="clarity-layer clarity-before">
         <img
-          src="/images/pool-before.png"
+          src={`${import.meta.env.BASE_URL}images/pool-before.png`}
           alt="Cloudy, green pool before service"
           className="clarity-img"
         />
@@ -72,8 +72,8 @@ export default function ClaritySlider() {
         className="clarity-layer clarity-after"
         style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
       >
-        <img
-          src="/images/pool-after.png"
+       <img
+          src={`${import.meta.env.BASE_URL}images/pool-after.png`}
           alt="Sparkling clean pool after service"
           className="clarity-img"
         />

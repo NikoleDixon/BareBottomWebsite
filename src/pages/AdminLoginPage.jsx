@@ -57,7 +57,10 @@ export default function AdminLoginPage() {
     <div style={{ padding: '20px', minHeight: '85vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
       <div className="admin-login-card">
         <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-          <img src="/images/logo.png" alt="Bare Bottom Logo" style={{ height: '44px', margin: '0 auto 12px' }} />
+          <img 
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
+            alt="Bare Bottom Logo" 
+            style={{ height: '44px', margin: '0 auto 12px' }} />
           <h2>
             {mode === 'login' && 'Owner Login'}
             {mode === 'signup' && 'Create Admin Account'}

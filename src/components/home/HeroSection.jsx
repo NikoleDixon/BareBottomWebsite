@@ -20,7 +20,7 @@ export default function HeroSection() {
           </span>
           <div>
             <img
-              src="/images/full-logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Bare Bottom Pool and Spa logo"
               className="full-logo"
             />

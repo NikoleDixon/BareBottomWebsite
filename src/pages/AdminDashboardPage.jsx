@@ -26,7 +26,10 @@ export default function AdminDashboardPage() {
     <div style={{ minHeight: '100vh', background: 'var(--white)' }}>
       <header className="admin-topbar">
         <div className="brand">
-          <img src="/images/logo.png" alt="Bare Bottom Logo" className="logo-img" />
+          <img 
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
+            alt="Bare Bottom Logo" 
+            className="logo-img" />
           <span>Admin Dashboard</span>
         </div>
 

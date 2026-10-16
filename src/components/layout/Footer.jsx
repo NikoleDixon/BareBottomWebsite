@@ -46,7 +46,10 @@ export default function Footer() {
             <div>
               <div className="brand">
                 <Link to="/">
-                  <img src="/images/logo.png" alt="Bare Bottom Pool and Spa logo" className="logo-img" />
+                  <img 
+                    src={`${import.meta.env.BASE_URL}images/logo.png`}
+                    alt="Bare Bottom Pool and Spa logo" 
+                    className="logo-img" />
                 </Link>
               </div>
               <p style={{ fontSize: '.86rem', maxWidth: '270px', marginTop: '10px', lineHeight: '1.45' }}>

@@ -23,7 +23,10 @@ export default function Navbar() {
     <header className="topnav">
       <div className="wrap">
         <Link to="/" className="brand" onClick={closeMobileMenu}>
-          <img src="/images/logo.png" alt="Bare Bottom Pool and Spa logo" className="logo-img" />
+          <img 
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
+            alt="Bare Bottom Pool and Spa logo" 
+            className="logo-img" />
         </Link>
 
         <nav>
